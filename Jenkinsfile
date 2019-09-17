@@ -20,7 +20,7 @@ pipeline {
     stage('Run SAST scan') {
           steps {
               echo 'Testing insecure dependency'
-              sh 'bandit -r ./bad'
+              sh 'bandit -r ./good/'
           }
       }
     }
